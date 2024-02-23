@@ -16,7 +16,7 @@ select,
 button {
   width: 200px;
   padding: 10px;
-  margin-bottom: 10px; /* Adjusted to add spacing below each input */
+  margin-bottom: 10px;
 }
 input[type="file"] {
   border: none;
@@ -29,7 +29,7 @@ input[type="submit"] {
   color: white;
   border: none;
   cursor: pointer;
-  width: auto; /* To ensure the button width is based on its content */
+  width: auto;
 }
 input[type="submit"]:hover {
   background-color: #0056b3;
@@ -41,5 +41,10 @@ input[type="submit"]:hover {
 .file-upload i {
   position: absolute;
   right: 10px;
-  top: 10px; /* Align the icon with the top of the input */
+  top: 10px;
+}
+
+.error-message {
+  color: red;
+  margin-left: 10px; /* Adjust spacing as needed */
 }
