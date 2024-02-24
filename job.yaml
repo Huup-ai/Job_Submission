@@ -1,0 +1,16 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: k8s-job-v666
+spec:
+  template:
+    metadata:
+      labels:
+        jobgroup: k8s-job-example
+    spec:
+      containers:
+        - name: test-python
+          image: rorschachx137/repe:latest
+          imagePullPolicy: IfNotPresent
+          command: ["python", "test.py"]
+      restartPolicy: OnFailure
